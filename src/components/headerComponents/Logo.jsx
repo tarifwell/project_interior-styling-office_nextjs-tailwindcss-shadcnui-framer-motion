@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import logo from '../assets/logo_3.png';
+import logo from '../../assets/logo_1.png';
 
 
 
@@ -11,8 +11,8 @@ const Logo = () => {
     <Link href="/">
         <Image
             src={logo}
-            width={160}
-            height={55}
+            width={220}
+            height={52}
             alt="Inter-Styling... logo"
         />
         
