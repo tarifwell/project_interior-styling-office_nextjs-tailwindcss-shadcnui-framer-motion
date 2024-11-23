@@ -1,4 +1,5 @@
-import localFont from "next/font/local";
+// import {localFont} from "next/font/local";
+import { Sen } from "next/font/google";
 import "./globals.css";
 
 // Components
@@ -8,6 +9,7 @@ import Footer from "@/components/Footer";
 // Theme Provider
 import { ThemeProvider } from "@/components/ThemeProvider";
 
+/*
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -17,6 +19,12 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});*/
+
+const Senfont = Sen({ 
+  subsets: ["latin"], 
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata = {
@@ -27,8 +35,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      {/* className={`${geistSans.variable} ${geistMono.variable} antialiased`} */}
+      {/* className={
+          Senfont.className +
+          " min-h-screen bg-background font-sans text-foreground"} */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={Senfont.className}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />

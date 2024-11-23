@@ -2,17 +2,14 @@
 
 import * as React from "react"
 
-// import { SunIcon, MoonIcon } from "@radix-ui/react-icons"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 
-// import { Button } from "./ui/button"
 import { Button } from "@/components/ui/button"
 
-
 const ThemeToggler = () => {
-  const { theme, setTheme } = useTheme();
   // const { setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   return (
 
@@ -26,8 +23,6 @@ const ThemeToggler = () => {
       {/* <span className="sr-only">Toggle theme</span> */}
         
     </Button>
-
-    
   )
 }
 
