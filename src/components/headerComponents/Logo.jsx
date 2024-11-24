@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import logo from '../../assets/logo_1.png';
+import logo from '../../assets/logo_1_1.png';
 
 
 

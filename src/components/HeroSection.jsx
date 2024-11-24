@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
 
-import hero_img from '../assets/images/hall.png';
+import hero_img from '../assets/images/hero.png';
 import { descriptionVariants, titleVariants, tagVariants } from '@/utils/animation';
 
 const HeroSection = () => {
@@ -56,7 +56,7 @@ const HeroSection = () => {
                 className='mt-8'
             >
                 <Button className="inline-flex items-center px-6 py-3 text-white bg-gray-800 rounded-full shadow-lg hover:bg-gray-700"> 
-                {/* 'inline-flex items-center px-8 py-3 text-white rounded-full shadow-lg hover:bg-gray-800 hover:ring-2 hover:ring-gray-950 ring-offset-2' */} 
+                {/* 'inline-flex items-center px-8 py-3 text-white rounded-full shadow-lg hover:bg-gray-800 hover:ring-2 hover:ring-gray-950 ring-offset-2'> */} 
                     Book Now
                     <ArrowUpRight className='w-5 h-5 ml-2'/>
                 </Button>
