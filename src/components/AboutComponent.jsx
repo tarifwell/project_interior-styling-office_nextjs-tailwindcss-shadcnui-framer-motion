@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-import about_img from '../assets/images/aboutfront.png';
+// import about_img from '../assets/images/aboutfront.png';
 import { descriptionVariants, tagVariants, titleVariants } from '@/utils/animation';
 
 const AboutComponent = () => {
@@ -17,7 +17,7 @@ const AboutComponent = () => {
           variants={titleVariants}
         >
           <Image 
-            src={about_img} 
+            src="/images_home/aboutfront.png"
             width={900} 
             height={500} 
             alt="about" 

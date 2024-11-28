@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
 
-import hero_img from '../assets/images/hero.png';
+// import hero_img from '../assets/images/hero.png';
 import { descriptionVariants, titleVariants, tagVariants } from '@/utils/animation';
 
 const HeroSection = () => {
@@ -66,9 +66,9 @@ const HeroSection = () => {
         {/* Right Section / Image Section */}
         <div className='flex-1 flex justify-center lg:justify-end'> {/* w-1/2 */}
             <Image 
-                src={hero_img}
-                // width={800}
-                // height={500} 
+                src="/images_home/hero.png" 
+                width={800}
+                height={500} 
                 alt="Interior Design"
                 className="rounded-lg shadow-lg w-full max-w-md sm:max-w-lg lg:max-w-xl"
                 priority 
